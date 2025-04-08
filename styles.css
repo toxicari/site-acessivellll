@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --laranja-claro: #485885;
     --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+    --alto-contraste-texto: #0d1a0300;
+    --alto-contraste-link: #129099;
+    --cor-fundo-pagina: #b7c0bf;
 }
 
 body {
     font-size: 1rem;
     font-family: 'Montserrat';
+    background-color: var(--cor-fundo-pagina);
 }
 
 header {
     background-color: #ffffff;
 }
-
 
 section {
     padding-bottom: 5rem;
@@ -24,14 +26,21 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
+    color: #2e394ec4;
     font-weight: 600;
 }
 
+.nav-img {
+    position: absolute; 
+    top: 100; 
+    right: 0; 
+    margin: 10px; 
+    width: 250px; 
+    height: auto; 
+}
+
 .inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
+    background-image: url('img/fundo2-site.DiretasJá.jpg');
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -41,7 +50,6 @@ section {
     margin: 0 auto;
 }
 
-/* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
     right: 0;
@@ -79,10 +87,7 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
 }
 
 #tropicalia .container {
@@ -91,12 +96,11 @@ section {
     justify-content: center;
     position: relative;
     z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
 }
 
 
 h2 {
-    font-family: 'Lemon', serif;
+    font-family: 'Notable', serif;
     font-size: 2.5em;
     font-style: normal;
     color: var(--laranja-claro);
@@ -113,26 +117,22 @@ h2 {
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/fundo-site.DiretasJá.jpg');
     background-size: cover;
     padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
 
 }
 
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: #bca4d3;
     border: none;
     font-weight: bold;
 }
